@@ -630,7 +630,7 @@
         let response = await fetch('/index.php');
         if (response.ok) { // if HTTP-status is 200-299
           clearInterval(pageOk);
-          location.reload(true);
+          location.reload();
         }
       } catch (error) {}
     }, 1000);
