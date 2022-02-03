@@ -1,0 +1,15 @@
+controllers:
+  resource: ../../src/Controller/
+  type: annotation
+
+default:
+  path: /
+  controller: App\Controller\DefaultController::index
+
+test:
+  path: /test
+  controller: App\Controller\DefaultController::test
+
+kernel:
+  resource: ../../src/Kernel.php
+  type: annotation
