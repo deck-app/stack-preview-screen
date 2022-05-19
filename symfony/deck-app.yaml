@@ -43,7 +43,7 @@ disk: null
 # 🟢 Builtin default: null (Mount nothing)
 # 🔵 This file: Mount the home as read-only, /tmp/lima as writable
 mounts:
-- location: "/Users/nabakr.das/Desktop"
+- location: "/Users/"
   # CAUTION: `writable` SHOULD be false for the home directory.
   # Setting `writable` to true is possible, but untested and dangerous.
   # 🟢 Builtin default: false
@@ -79,7 +79,7 @@ mounts:
     # See https://www.kernel.org/doc/Documentation/filesystems/9p.txt
     # 🟢 Builtin default: "fscache" for non-writable mounts, "mmap" for writable mounts
     cache: null
-- location: "/Users/nabakr.das/Desktop"
+- location: "/Users/"
   # 🟢 Builtin default: false
   # 🔵 This file: true (only for "/tmp/lima")
   writable: true
